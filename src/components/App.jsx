@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ShoppingList from "./components/ShoppingList";
-import Header from "./components/Header";
-import itemData from "./data/items";
+import ShoppingList from "./ShoppingList";  
+import Header from "./Header";              
+import itemData from "../data/items";
 
 function App() {
   const [items, setItems] = useState(itemData);

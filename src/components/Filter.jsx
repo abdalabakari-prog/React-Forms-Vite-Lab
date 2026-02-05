@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 
-function Filter({ onCategoryChange, onSearchChange }) {
-  const [search, setSearch] = useState("");
-
+function Filter({ onCategoryChange, onSearchChange, search }) {
   // Handle search input change
   function handleSearchChange(event) {
-    const searchValue = event.target.value;
-    setSearch(searchValue);
-    onSearchChange(searchValue);
+    onSearchChange(event.target.value);
   }
 
   return (
